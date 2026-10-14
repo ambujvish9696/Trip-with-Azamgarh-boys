@@ -1,5 +1,280 @@
-<!DOCTYPE html>, <html lang="en">, < head>, < meta charset="UTF-8">, < meta name="viewport" content="width equal device-width, initial-scale equal 1.0">, <title>Trip With Azamgarh Boys</title> < style> body{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif;background:#0b0f14;color:white;line-height:1.6} header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0 . 8)} . hero h1{font-size:48px;margin-bottom:15px} . hero h2{font-size:28px;margin-bottom:15px} . hero p {font-size:18px;color:#d1d5db} section {max-width:1100px;margin:auto;padding:60px 20px} section-title {text-align:center;font-size:34px;margin-bottom: 30px} . card {background:#151b23;border-radius:16px;padding:25px;margin-bottom:25px;border:1px solid #293241} . stats `{display:grid;grid-template-columns:
 
-repeat auto-fit minmax 180px 1fr);gap:20px;text-align:center} . stat {background:#151b23;padding:25px;border-radius:15px} . stat h3 {font-size:30px} . route {text-align:center;font-size:18px;color:#d1d5db} .form {max-width:650px;margin:auto} . input, select, textarea {width:100%;padding:13px;margin:8px 0 16px;border-radius:8px;border:none;font-size:16px} . button {width:100%;padding:14px;border:none;border-radius 8px;background:#f59e0b;color:#111;font-size:18px;font-weight:bold;cursor:pointer} . success
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip With Azamgarh Boys</title>
 
-{margin-top:20px;padding:15px;background:#12351f;border-radius:10px;display:none} footer {text-align:center;padding:30px;background:#080b0f;color:#9ca3af} 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0f14;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.85)
+            ), url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80")
+            center/cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #151b23;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #293241;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat {
+            background: #151b23;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .stat h3 {
+            font-size: 30px;
+            margin: 0;
+            color: #f59e0b;
+        }
+
+        .route {
+            text-align: center;
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        .form {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .form input,
+        .form select,
+        .form textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0 16px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #f59e0b;
+            color: #111;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #fbbf24;
+        }
+
+        .success {
+            margin-top: 20px;
+            padding: 15px;
+            background: #12351f;
+            border-radius: 10px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #080b0f;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Trip With Azamgarh Boys</h1>
+            <h2>Friends, Adventures & Memories</h2>
+            <p>One trip, countless memories, and unlimited fun!</p>
+            <a href="#trip" style="color:#f59e0b;">
+                Explore Our Trip ↓
+            </a>
+        </div>
+    </header>
+
+    <section id="trip">
+        <h2 class="section-title">Our Trip</h2>
+
+        <div class="card">
+            <h3>Adventure Starts Here!</h3>
+            <p>
+                Welcome to Trip With Azamgarh Boys.
+                We travel together, explore new places,
+                enjoy adventures, and create unforgettable memories.
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Friends</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Fun & Adventure</p>
+            </div>
+
+            <div class="stat">
+                <h3>∞</h3>
+                <p>Memories</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Our Travel Route</h2>
+
+        <div class="card route">
+            <p>Azamgarh → Adventure Destination → Home</p>
+            <p>New places, new experiences, lifelong friendships.</p>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2 class="section-title">Join Our Next Trip</h2>
+
+        <form class="form" id="tripForm">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="destination">Choose Destination</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select a destination</option>
+                <option value="Goa">Goa</option>
+                <option value="Manali">Manali</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us about your trip plan"
+            ></textarea>
+
+            <button type="submit" class="button">
+                Join the Adventure
+            </button>
+
+            <div class="success" id="successMessage" role="status">
+                Thank you! Your form has been submitted on this page.
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Trip With Azamgarh Boys | Friends Forever ❤️</p>
+    </footer>
+
+    <script>
+        const tripForm = document.getElementById("tripForm");
+        const successMessage =
+            document.getElementById("successMessage");
+
+        tripForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            successMessage.style.display = "block";
+            successMessage.textContent =
+                "Thank you, " +
+                document.getElementById("name").value +
+                "! Your form was submitted on this page.";
+
+            tripForm.reset();
+        });
+    </script>
+
+</body>
+</html>
