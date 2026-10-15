@@ -277,3 +277,106 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Trip Budget Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #087f5b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #066847;
+        }
+
+        #r {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bike Trip Budget Calculator</h2>
+
+        <label for="d">Distance (KM):</label>
+        <input id="d" type="number" min="0.1" step="any"
+               placeholder="Enter distance">
+
+        <label for="m">Mileage (KM/L):</label>
+        <input id="m" type="number" min="0.1" step="any"
+               placeholder="Enter bike mileage">
+
+        <label for="p">Petrol Price (₹/L):</label>
+        <input id="p" type="number" min="0.1" step="any"
+               placeholder="Enter petrol price">
+
+        <button onclick="calc()">Calculate</button>
+
+        <p id="r" aria-live="polite"></p>
+    </div>
+
+    <script>
+        function calc() {
+            const d = parseFloat(document.getElementById("d").value);
+            const m = parseFloat(document.getElementById("m").value);
+            const p = parseFloat(document.getElementById("p").value);
+            const result = document.getElementById("r");
+
+            if (
+                !Number.isFinite(d) || d <= 0 ||
+                !Number.isFinite(m) || m <= 0 ||
+                !Number.isFinite(p) || p <= 0
+            ) {
+                result.textContent = "Please enter all values greater than zero.";
+                return;
+            }
+
+            const petrolUsed = d / m;
+            const petrolCost = petrolUsed * p;
+
+            result.innerHTML =
+                "Petrol Required: " + petrolUsed.toFixed(2) + " L<br>" +
+                "Total Petrol Cost: ₹" + petrolCost.toFixed(2);
+        }
+    </script>
+</body>
+</html>
