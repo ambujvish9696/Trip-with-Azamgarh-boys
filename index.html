@@ -275,6 +275,166 @@
         });
     </script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip With Azamgarh Boys</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0f14;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 45px 20px;
+            background: linear-gradient(135deg, #064e3b, #0f172a);
+        }
+
+        header h1 {
+            font-size: clamp(28px, 5vw, 48px);
+            margin: 0 0 10px;
+        }
+
+        header p {
+            color: #d1fae5;
+            font-size: 18px;
+        }
+
+        .trip-info {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 20px;
+            text-align: center;
+            background: #17212b;
+            border-radius: 12px;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.25s;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            background: #111827;
+            color: #cbd5e1;
+        }
+
+        footer a {
+            color: #34d399;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 700px) {
+            .photo-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .photo-grid img {
+                height: 180px;
+            }
+
+            .gallery {
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-grid img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🏍️ Trip With Azamgarh Boys</h1>
+        <p>Good Friends • Great Journey • Lifetime Memories</p>
+    </header>
+
+    <section class="trip-info">
+        <h2>🇳🇵 Nepal Trip 2027</h2>
+        <p><strong>Date:</strong> 4 April 2027</p>
+        <p><strong>Meeting Point:</strong> Barthha Bazaar</p>
+        <p><strong>Total Distance:</strong> 1200 KM</p>
+        <p>New Places • New Vibes • Same Bros</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>📸 Our Trip Memories</h2>
+
+        <div class="photo-grid">
+            <img src="photo1.jpg" alt="Trip memory 1" loading="lazy">
+            <img src="photo2.jpg" alt="Trip memory 2" loading="lazy">
+            <img src="photo3.jpg" alt="Trip memory 3" loading="lazy">
+            <img src="photo4.jpg" alt="Trip memory 4" loading="lazy">
+            <img src="photo5.jpg" alt="Trip memory 5" loading="lazy">
+            <img src="photo6.jpg" alt="Trip memory 6" loading="lazy">
+            <img src="photo7.jpg" alt="Trip memory 7" loading="lazy">
+            <img src="photo8.jpg" alt="Trip memory 8" loading="lazy">
+            <img src="photo9.jpg" alt="Trip memory 9" loading="lazy">
+            <img src="photo10.jpg" alt="Trip memory 10" loading="lazy">
+            <img src="photo11.jpg" alt="Trip memory 11" loading="lazy">
+            <img src="photo12.jpg" alt="Trip memory 12" loading="lazy">
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: 8563020311</p>
+        <p>
+            <a href="https://ambujvish9696.github.io/Trip-with-Azamgarh-boys/">
+                Visit Our Website
+            </a>
+        </p>
+        <p>Travel | Explore | Enjoy ❤️</p>
+    </footer>
+</body>
+</html>
 </body>
 </html>
 <!DOCTYPE html>
